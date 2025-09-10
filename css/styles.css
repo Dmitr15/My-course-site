@@ -97,5 +97,41 @@ body{
 }
 
 .what__img img{
-  max-width: 30%;
+  max-width: 100%;
+}
+
+/* what__row */
+
+.title{
+  
+  color: #445162;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.what__title{
+  margin: 0 0 33px 0;
+}
+
+.what__row{
+  display: flex;
+}
+
+.what{
+  padding: 50px 0;
+}
+
+.what__img{
+  flex: 0 0 420px;
+}
+
+.what__body{
+  flex: 1 1 auto;
+  padding-left: 30px;
+}
+
+.what__txt p{
+  color: #333333;
+  font-size: 16px;
+  line-height: 24px;
 }
