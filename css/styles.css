@@ -141,11 +141,16 @@ body {
 }
 
 .item__img {
-  flex: 0 0 250px;
+  /* flex: 0 0 250px; */
+  align-items: center;
+  text-align: center;
+  /* justify-content: center; */
 }
 
 .item__img img {
   max-width: 100%;
+  align-items: center;
+  justify-content: center;
 }
 
 .item__body {
@@ -238,4 +243,5 @@ body {
   text-align: center;
   border-radius: 5px;
   font-size: 18px;
+  color: #445162;
 }
