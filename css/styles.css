@@ -141,10 +141,8 @@ body {
 }
 
 .item__img {
-  /* flex: 0 0 250px; */
   align-items: center;
   text-align: center;
-  /* justify-content: center; */
 }
 
 .item__img img {
