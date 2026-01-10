@@ -247,7 +247,7 @@ body {
 }
 
 .vertical__btn {
-  display: block;
+  display: inline-block;
   margin: 0px 20px;
   height: 40px;
   background-color: white;
@@ -256,6 +256,19 @@ body {
   border-radius: 5px;
   font-size: 18px;
   color: #445162;
+  box-shadow: 0 5px 7px #91aac6;
+  position: relative;
+  top: 0;
+  transition-duration: 350ms, 350ms, 350ms;
+  transition-property: top, border-radius, box-shadow;
+}
+
+.vertical__btn:hover {
+  top: 2px;
+  box-shadow: 0 3px 3px #91aac6;
+  border-radius: 35px;
+  transition-duration: 250ms, 750ms, 250ms;
+  transition-property: top, border-radius, box-shadow;
 }
 
 @media (max-width: 760px) {
