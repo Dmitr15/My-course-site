@@ -294,17 +294,18 @@ body {
 
 @media (max-width: 700px) {
   .vertical__row {
-    /* display: block; */
     flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
   }
   .vertical__item {
     width: 300px;
   }
   .vertical__column {
     justify-content: center;
+    margin-bottom: 15px;
   }
-  .vertical__row {
-    flex-direction: column;
-    align-items: center;
+  .vertical__column:last-child {
+    margin-bottom: 0;
   }
 }
