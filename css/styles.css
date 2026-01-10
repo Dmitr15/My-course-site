@@ -27,10 +27,12 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 10px;
 }
 
 .hi__body {
   color: #ffffff;
+  padding-right: 20px;
 }
 
 .hi__title {
@@ -45,10 +47,20 @@ body {
   line-height: 22px;
   padding: 0px 0px 0px 36px;
   margin-bottom: 15px;
+  position: relative;
 }
 
 .hi__list li:last-child {
   margin: 0;
+}
+
+.hi__list li:before {
+  content: "";
+  background: url("../img/check_25dp_FFFFFF_FILL1_wght400_GRAD0_opsz24.svg");
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 5px;
 }
 
 .hi__img {
@@ -56,8 +68,7 @@ body {
 }
 
 .hi__img img {
-  max-width: 70%;
-  max-height: 100%;
+  min-width: 70%;
 }
 
 .footer {
@@ -98,11 +109,13 @@ body {
 }
 
 .what {
-  padding: 50px 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-right: 15px;
 }
 
 .what__img {
-  flex: 0 0 420px;
+  flex: 0 0 300px;
 }
 
 .what__body {
@@ -132,6 +145,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   margin: 0px -8px;
+  padding-right: 10px;
 }
 
 .columns__column {
@@ -143,12 +157,11 @@ body {
 .item__img {
   align-items: center;
   text-align: center;
+  flex: 0 0 100px;
 }
 
 .item__img img {
   max-width: 100%;
-  align-items: center;
-  justify-content: center;
 }
 
 .item__body {
@@ -192,6 +205,7 @@ body {
 .vertical__row {
   display: flex;
   margin: 0px -22.5px;
+  padding: 0 10px;
 }
 
 .vertical__column {
@@ -222,7 +236,7 @@ body {
   background-color: #fff;
   color: #445162;
   padding: 15px 0;
-  font-size: 35px;
+  font-size: 32px;
 }
 
 .vertical__txt {
@@ -242,4 +256,55 @@ body {
   border-radius: 5px;
   font-size: 18px;
   color: #445162;
+}
+
+@media (max-width: 760px) {
+  .hi__img {
+    display: none;
+  }
+  .hi__row {
+    justify-content: center;
+    max-width: 100%;
+  }
+  .hi__body {
+    padding-right: 0;
+  }
+  .item__img {
+    flex: 0 0 50px;
+  }
+  .what__img {
+    flex: 0 0 250px;
+  }
+}
+
+@media (max-width: 570px) {
+  .what__img {
+    display: none;
+  }
+  .what__body {
+    padding-left: 15px;
+  }
+}
+
+@media (max-width: 530px) {
+  .item__img {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .vertical__row {
+    /* display: block; */
+    flex-wrap: wrap;
+  }
+  .vertical__item {
+    width: 300px;
+  }
+  .vertical__column {
+    justify-content: center;
+  }
+  .vertical__row {
+    flex-direction: column;
+    align-items: center;
+  }
 }
