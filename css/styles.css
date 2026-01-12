@@ -276,6 +276,57 @@ body {
   transition-property: top, border-radius, box-shadow;
 }
 
+.animation {
+  padding: 50px 0;
+}
+
+.animation__title {
+  text-align: center;
+  margin-bottom: 29px;
+}
+
+.animation__body {
+  max-width: 990px;
+  margin: 0px auto;
+}
+
+.animation__row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+.animation__dot {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  position: relative;
+  z-index: 2;
+}
+
+.animation__dot:nth-child(1) {
+  background: rgb(136, 92, 92);
+}
+.animation__dot:nth-child(2) {
+  background: rgb(109, 153, 105);
+}
+.animation__dot:nth-child(3) {
+  background: rgb(112, 117, 182);
+}
+
+.animation__dot:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 5px;
+  background: rgb(0, 0, 0);
+  z-index: 0 !important;
+  width: 300px;
+}
+
 @media (max-width: 760px) {
   .hi__img {
     display: none;
