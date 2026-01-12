@@ -48,6 +48,7 @@ body {
   padding: 0px 0px 0px 36px;
   margin-bottom: 15px;
   position: relative;
+  transition: 180ms;
 }
 
 .hi__list li:last-child {
@@ -61,6 +62,10 @@ body {
   height: 20px;
   position: absolute;
   left: 5px;
+}
+
+.hi__list li:hover {
+  margin-left: 30px;
 }
 
 .hi__img {
