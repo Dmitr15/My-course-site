@@ -70,10 +70,11 @@ body {
 
 .hi__img {
   margin-left: auto;
+  max-width: 100%;
 }
 
 .hi__img img {
-  min-width: 70%;
+  width: 100%;
 }
 
 .footer {
