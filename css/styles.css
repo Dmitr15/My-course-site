@@ -62,10 +62,15 @@ body {
   height: 20px;
   position: absolute;
   left: 5px;
+  transition: 180ms;
 }
 
 .hi__list li:hover {
-  margin-left: 30px;
+  transform: translateX(25px);
+}
+
+.hi__list li:hover:before {
+  transform: translateX(-25px) scale(1.2);
 }
 
 .hi__img {
